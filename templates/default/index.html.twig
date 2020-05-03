@@ -8,8 +8,8 @@
 <div id="navBar">
     <div id="navBarHeader">
         <div id="navBarHeaderLeft">
-            <h3 class="text-light">Nos Horaires</h3>
-            <ul class="list-unstyled">
+            <h3 class="text-light text-center mt-2">Nos Horaires</h3>
+            <ul class="list-unstyled text-center">
               <li class="text-light">Lundi à Samedi : 10h à 19h</li>
               <li class="text-light">Dimanche : 10h à 13h</li>
             </ul>
@@ -22,19 +22,19 @@
         </div>
     </div>
     <div id="navBarFooter">
-      <ul class="list-unstyled text-light d-flex justify-content-around mt-5 ">
-        <li class="list-inline-item">LA CAVE</li>
-        <li class="list-inline-item">NOS VINS</li>
-        <li class="list-inline-item">NOS CHAMPAGNES</li>
-        <li class="list-inline-item">NOS BIERES</li>
-        <li class="list-inline-item">NOS SPIRITUEUX</li>
-        <li class="list-inline-item">INFO / CONTACT</li>
+      <ul class="list-unstyled text-light d-flex justify-content-around mt-3 ">
+        <li class="list-inline-item navLink">LA CAVE</li>
+        <li class="list-inline-item navLink">NOS VINS</li>
+        <li class="list-inline-item navLink">NOS CHAMPAGNES</li>
+        <li class="list-inline-item navLink">NOS BIERES</li>
+        <li class="list-inline-item navLink">NOS SPIRITUEUX</li>
+        <li class="list-inline-item navLink">INFO / CONTACT</li>
       </ul>
     </div>
 </div>
 
 <!-- SLIDER -->
-<div id="carouselExampleControls" class="carousel slide sliderPosition " data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide sliderPosition vw-100 " data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active carousselSize">
       <img class="d-block w-100" src="{{asset('/img/auTirBouchonSlider_1.jpg')}}" alt="First slide">
@@ -55,5 +55,17 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<!--TEXTE SLIDER-->
+<div class="main-text">
+    <div class="col-md-12 text-center">
+        <strong class="textSlider">Le vin c'est de la poésie</strong>
+        <strong class="textSlider pl-3">en bouteille...</strong>
+    </div>
+</div>
+
+
+<!-- FIRST SEPARATOR -->
+<div class="container-fluid firstSeparator vh-100"></div>
 
 {% endblock %}
