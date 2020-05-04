@@ -1,5 +1,21 @@
+/***** DEPLACEMENT NAV BAR *****/
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 500) {
+        $('#navBar').removeClass('animationDown');
+        $('#navBar').addClass('animationUp');
+    } else if (scroll <500) {
+        $('#navBar').removeClass('animationUp');
+        $('#navBar').addClass('animationDown');
+    }
+});
+
+/***** LIEN ACTIF *****/
+let links = $('.navLink');
 
 
-let test = $('#test');
 
-console.log('cocou' + "" + test);
+links.click(function() {
+   alert(links);
+  });

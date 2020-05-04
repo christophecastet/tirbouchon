@@ -13,6 +13,8 @@ body{
     position: relative;
 }
 
+/***** NAVBAR *****/
+
 #navBar{
     height: 30vh;
     width: 100vw;
@@ -87,6 +89,35 @@ body{
 
 .navLink{
     cursor: pointer;
+}
+
+/***** NAVBAR DYNAMIQUE *****/
+.animationUp{
+    transform:translateY(-70%);
+    transition: 0.8s transform;
+}
+
+.animationDown{
+    transform:translateY(0%);
+    transition: 0.8s transform;
+}
+
+/***** NAV BAR ACTIVE LINK *****/
+a{
+    text-decoration: none !important;
+    
+}
+
+.colorNavLink{
+    color:pink;
+}
+
+.navLink:hover{
+    color:	red!important;
+}
+
+.active{
+    color:	blue!important;
 }
 
 /***** TEXT SLIDER *****/
