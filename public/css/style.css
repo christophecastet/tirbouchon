@@ -115,3 +115,29 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+
+/***** GENERAL ONGLET ****/
+
+.paragSeparator{
+    height: 50%;
+    width: 50%;
+    background-image: url("/img/vigne.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.thumbailLaCave{
+    height: 30vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#thumbailVerre{
+    background-image: url("/img/laCaveVerre.png");
+    background-position: left;
+}
+
+#thumbailSommelier{
+    background-image: url("/img/laCaveSommelier.png");
+    background-position: right;
+}
