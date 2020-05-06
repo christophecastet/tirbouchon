@@ -23,16 +23,35 @@
     </div>
     <div id="navBarFooter">
       <ul class="list-unstyled  d-flex justify-content-around mt-3 ">
-        <li class="list-inline-item "><a href="" class="navLink colorNavLink">LA CAVE</a></li>
-        <li class="list-inline-item"><a href="" class="navLink colorNavLink">NOS VINS</a></li>
-        <li class="list-inline-item"><a href="" class="navLink colorNavLink">NOS CHAMPAGNES</a></li>
-        <li class="list-inline-item"><a href="" class="navLink colorNavLink">NOS BIERES</a></li>
-        <li class="list-inline-item"><a href="" class="navLink colorNavLink">NOS SPIRITUEUX</a></li>
-        <li class="list-inline-item"><a href="" class="navLink colorNavLink">INFO / CONTACT</a></li>
+        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">LA CAVE</a></li>
+        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">NOS VINS</a></li>
+        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">NOS CHAMPAGNES</a></li>
+        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">NOS BIERES</a></li>
+        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">NOS SPIRITUEUX</a></li>
+        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">INFOS / CONTACT</a></li>
       </ul>
     </div>
 </div>
 
+<!-- NAV BAR RESPONSIVE -->
+<div class="header showMenu fixedPosition"></div>
+  <input type="checkbox" class="openSidebarMenu showMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle showMenu fixedPosition">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu" class="showMenu fixedPosition">
+    <ul class="sidebarMenuInner"id="sidebarMenuInner" >
+     
+      <li><a href="#test" target="_self" class="navLinkResponsive">La Cave</a></li>
+      <li><a href="#test" target="_self" class="navLinkResponsive">Nos Vins</a></li>
+      <li><a href="#test" target="_self" class="navLinkResponsive">Nos Champagnes</a></li>
+      <li><a href="#test" target="_self" class="navLinkResponsive">Nos Bières</a></li>
+      <li><a href="#test" target="_self" class="navLinkResponsive">Nos Spiritueux</a></li>
+      <li><a href="#test" target="_self" class="navLinkResponsive">Infos / Contact</a></li>
+    </ul>
+  </div>
 <!-- SLIDER -->
 <div id="carouselExampleControls" class="carousel slide sliderPosition vw-100 " data-ride="carousel">
   <div class="carousel-inner">
@@ -59,8 +78,7 @@
 <!--TEXTE SLIDER-->
 <div class="main-text">
     <div class="col-md-12 text-center">
-        <strong class="textSlider">Le vin c'est de la poésie</strong>
-        <strong class="textSlider pl-3">en bouteille...</strong>
+        <div id="typedtext" class="textSlider"></div>
     </div>
 </div>
 
@@ -69,7 +87,7 @@
 <div class="container-fluid firstSeparator vh-100"></div>
 
 <!-- LA CAVE -->
-<div class="container-fluid vh-100">
+<div class="container-fluid vh-100" id="test">
   <div class="row">
     <div class="col-md-4">
       <h2>La Cave</h2>
@@ -95,4 +113,6 @@
 
 </div>
 
+
+<a id="button"></a>
 {% endblock %}
