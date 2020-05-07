@@ -34,24 +34,22 @@
 </div>
 
 <!-- NAV BAR RESPONSIVE -->
-<div class="header showMenu fixedPosition"></div>
-  <input type="checkbox" class="openSidebarMenu showMenu" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle showMenu fixedPosition">
-    <div class="spinner diagonal part-1"></div>
-    <div class="spinner horizontal"></div>
-    <div class="spinner diagonal part-2"></div>
-  </label>
-  <div id="sidebarMenu" class="showMenu fixedPosition">
-    <ul class="sidebarMenuInner"id="sidebarMenuInner" >
-     
-      <li><a href="#test" target="_self" class="navLinkResponsive">La Cave</a></li>
-      <li><a href="#test" target="_self" class="navLinkResponsive">Nos Vins</a></li>
-      <li><a href="#test" target="_self" class="navLinkResponsive">Nos Champagnes</a></li>
-      <li><a href="#test" target="_self" class="navLinkResponsive">Nos Bières</a></li>
-      <li><a href="#test" target="_self" class="navLinkResponsive">Nos Spiritueux</a></li>
-      <li><a href="#test" target="_self" class="navLinkResponsive">Infos / Contact</a></li>
-    </ul>
+<div class='container fixed-top showMenu'>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <div class="overlay-content">
+      <a class='link' href="#">About</a>
+      <a class='link' href="#">Services</a>
+      <a class='link' href="#">Clients</a>
+      <a class='link' href="#">Contact</a>
+    </div>
   </div>
+  <span  id="btn" >&#9776;</span>
+</div>
+
+<div class="container-fluid fixed-bottom footerReponsive">
+    <p>test</p>
+</div>
 <!-- SLIDER -->
 <div id="carouselExampleControls" class="carousel slide sliderPosition vw-100 " data-ride="carousel">
   <div class="carousel-inner">

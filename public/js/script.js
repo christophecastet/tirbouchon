@@ -84,13 +84,36 @@ var aText = new Array(
     
     typewriter();
 
+/***** BURGER MENU *****/
 
-  let navLinkResponsive =  $('.navLinkResponsive');
-  let sidebarMenu = $('#sidebarMenuInner');
+let link = document.querySelectorAll('.link');
 
-  for (let i = 0; i < navLinkResponsive.length; i++) {
-    navLinkResponsive[i].addEventListener("click", function(e) {
-      console.log(sidebarMenu[0].style);
-      sidebarMenu[0].classList.add('test');
-    })
-  }
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+for (let i = 0; i< link.length; i++) {
+	link[i].addEventListener("click", function(e) {
+  closeNav(link[i]);
+  document.querySelector('#btn').style.display = 'block';
+	})
+}
+
+document.querySelector('#btn').addEventListener('click', function(e) {
+	myFunction(this);
+  openNav();
+  document.querySelector('#btn').style.display = 'none';
+})
+
+document.querySelector(".closebtn").addEventListener('click', function() {
+  closeNav();
+  document.querySelector('#btn').style.display = 'block';
+})
