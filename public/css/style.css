@@ -160,8 +160,8 @@ a{
 /***** GENERAL ONGLET ****/
 
 .paragSeparator{
-    height: 50%;
-    width: 50%;
+    height: 10vh;
+    width: auto;
     background-image: url("/img/vigne.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -355,5 +355,27 @@ a{
         display: none;
     }
 
+    #thumbailVerre{
+        background-position: right;
+    }
+    
+    #thumbailSommelier{
+        background-position: left;
+    }
+
+    .responviveCustomSize{
+        display: none;
+    }
+
+    .marginResponsive{
+        margin-top: 30%;
+    }
+
+    .sliderResponsive{
+        height: 40vh;
+    }
+    .imgSliderSize{
+        height: 100% !important;
+    }
 }
 

@@ -53,16 +53,16 @@
     <div class="footerPicto insta"></div>
 </div>
 <!-- SLIDER -->
-<div id="carouselExampleControls" class="carousel slide sliderPosition vw-100 " data-ride="carousel">
-  <div class="carousel-inner">
+<div id="carouselExampleControls" class="carousel slide sliderPosition vw-100 sliderResponsive " data-ride="carousel">
+  <div class="carousel-inner sliderResponsive">
     <div class="carousel-item active carousselSize">
-      <img class="d-block w-100" src="{{asset('/img/auTirBouchonSlider_1.jpg')}}" alt="First slide">
+      <img class="d-block w-100 imgSliderSize" src="{{asset('/img/auTirBouchonSlider_1.jpg')}}" alt="First slide">
     </div>
     <div class="carousel-item carousselSize">
-      <img class="d-block w-100" src="{{asset('/img/auTirBouchonSlider_2.jpg')}}" alt="Second slide">
+      <img class="d-block w-100 imgSliderSize" src="{{asset('/img/auTirBouchonSlider_2.jpg')}}" alt="Second slide">
     </div>
     <div class="carousel-item carousselSize">
-      <img class="d-block w-100" src="{{asset('/img/auTirBouchonSlider_3.jpg')}}" alt="Third slide">
+      <img class="d-block w-100 imgSliderSize " src="{{asset('/img/auTirBouchonSlider_3.jpg')}}" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -88,24 +88,26 @@
 
 <!-- LA CAVE -->
 <div class="container-fluid vh-100" id="test">
-  <div class="row">
-    <div class="col-md-4">
-      <h2>La Cave</h2>
-      <div class="paragSeparator"></div>
-      <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit</p>
+  <div class="row h-100">
+    <div class="col-md-6 d-flex align-items-center col-12 mt-2">
+      <div class='container ml-1'>
+        <h2>La Cave</h2>
+        <div class="paragSeparator"></div>
+          <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit</p>
+      </div>
     </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class='col-md-6'></div>
-        <div class='col-md-6'>
-          <div class='container-fluid thumbailLaCave' id="thumbailVerre"></div>
+    <div class="col-md-6 d-flex align-items-center justify-content-center flex-column col-12 h-50">
+        <div class="row w-100 h-50">
+          <div class='col-md-6 responviveCustomSize'></div>
+          <div class='col-md-6'>
+            <div class='container-fluid thumbailLaCave h-100 w-100' id="thumbailVerre"></div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class='col-md-6'>
-          <div class='container-fluid thumbailLaCave' id="thumbailSommelier"></div></div>
-        <div class='col-md-6'></div>
-      </div>
+        <div class="row w-100 h-50">
+          <div class='col-md-6 '>
+            <div class='container-fluid thumbailLaCave h-100 w-100' id="thumbailSommelier"></div></div>
+          <div class='col-md-6 responviveCustomSize'></div>
+        </div>
     </div>
   </div>
 </div>
@@ -114,7 +116,7 @@
 <div class="container-fluid secondSeparator separatorResponsive vh-100"></div>
 
 <!-- NOS VINS -->
-<div class="container-fluid vh-100" id="test">
+<div class="container-fluid vh-100 marginResponsive" id="test">
   <div class="row">
     <div class="col-md-4">
       <h2>Nos Vins</h2>
