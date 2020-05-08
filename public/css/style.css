@@ -69,19 +69,19 @@ body{
     width: 15%;
 }
 
-#phone{
+.phone{
     background-image: url("/img/phone.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#fbk{
+.fbk{
     background-image: url("/img/fbk.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#insta{
+.insta{
     background-image: url("/img/insta.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -149,6 +149,14 @@ a{
     background-attachment: fixed;
 }
 
+/***** SECOND SEPARATOR *****/
+
+.secondSeparator{
+    background-image: url("/img/secondSeparator.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 /***** GENERAL ONGLET ****/
 
 .paragSeparator{
@@ -175,6 +183,33 @@ a{
     background-position: right;
 }
 
+.thumbailRubrique {
+    height: 30vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#nosVinsVigne{
+    background-image: url("/img/nosVinsVigne.png");
+   
+}
+
+#nosChampagnesFlutes{
+    background-image: url("/img/nosChampagnesFlutes.png");
+   
+}
+
+#nosBieresChope{
+    background-image: url("/img/nosBieresChope.png");
+   
+}
+
+#nosSpiritueuxElixir{
+    background-image: url("/img/nosSpiritueuxElixir.png");
+   
+}
 /***** BACK TO TOP *****/
 #button {
     display: inline-block;
@@ -284,8 +319,41 @@ a{
     }
 
     .footerReponsive {
-        bottom: 5% !important;
+        background-color: rgba(56, 62, 66, 0.5);
+        width: 100%;
+        height: 10%;
     }
    
+    .footerPicto{
+        height: 75%;
+        width: 33%;
+        background-position: center;
+    }
+    .phone{
+        background-image: url("/img/phone.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .fbk{
+        background-image: url("/img/fbk.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .insta{
+        background-image: url("/img/insta.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .navLink{
+        cursor: pointer;
+    }
+
+    .separatorResponsive {
+        display: none;
+    }
+
 }
 
