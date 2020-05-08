@@ -124,8 +124,8 @@ a{
 
 .main-text{
     position: absolute;
-    top:380px;
-    right:102px;
+    top:5%;
+    right:10%;
     height: 40vh;
     width: 80vw;
     
@@ -134,7 +134,7 @@ a{
 .textSlider{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:white ;
-    font-size: 4rem;
+    font-size: 10vh;
     display: block;
 }
 
@@ -219,8 +219,8 @@ a{
     text-align: center;
     border-radius: 4px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 2%;
+    right: 2%;
     transition: background-color .3s, 
       opacity .5s, visibility .5s;
     opacity: 0;
@@ -376,6 +376,45 @@ a{
     }
     .imgSliderSize{
         height: 100% !important;
+    }
+
+    #button{
+        bottom:11%;
+        right:1%;
+    }
+
+    .textSlider{
+        font-size:3vh;
+    }
+
+    .main-text{
+        top:3%;
+        right:11%;
+    }
+
+    .repsonsiveRelativeRow{
+        position: relative;
+    }
+
+    .responsiveAbsoCol{
+        position: absolute !important;
+        top:104%;
+    }
+
+    .responsiveMarginChampagnes{
+        margin-top: 3%;
+    }
+
+    .responsiveMarginTopBieres{
+        margin-top: 3%;
+    }
+
+    #absoluteBottom{
+        top:95%;
+    }
+    
+    #test > .row > .responsiveHeightCave{
+        height: 50% !important;
     }
 }
 
