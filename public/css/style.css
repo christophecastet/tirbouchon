@@ -167,6 +167,9 @@ a{
     background-size: contain;
 }
 
+.vinsColMargin{
+    margin-left: 5rem;
+}
 .thumbailLaCave{
     height: 30vh;
     width: 100%;
@@ -193,6 +196,7 @@ a{
 
 #nosVinsVigne{
     background-image: url("/img/nosVinsVigne.png");
+    background-position: right;
    
 }
 
@@ -416,5 +420,21 @@ a{
     #test > .row > .responsiveHeightCave{
         height: 50% !important;
     }
+
+    .marginResponsive > .row >.responsiveVinsColMargin{
+        margin-left:2% !important;
+        width: 100% !important;
+    }
+
+    #nosVinsVigne{
+        background-position: top;
+        height: 30vh !important;
+    }
+    #responsiveMarginimgVin{
+        display: flex !important;
+        align-items: flex-start !important;
+    }
+
+   
 }
 
