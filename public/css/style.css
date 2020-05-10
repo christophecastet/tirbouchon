@@ -264,7 +264,7 @@ a{
 }
 
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 480px) {
     .showMenu{
         display: block;
     }
@@ -450,5 +450,26 @@ a{
         background-position: top;
         height: 30vh !important;
     }
+
+    #responsiveMarginimgBieres{
+        display: flex !important;
+        align-items: flex-start !important;
+    }
+
+    #nosBieresChope{
+        background-position: top;
+        height: 30vh !important;
+    }
+
+    .responsiveMarginTopBieres > .row > .responsiveVinsColMargin {
+        margin-left:2% !important;
+        width: 100% !important;
+    }
+
+    #nosSpiritueuxElixir{
+        background-position: top;
+        height: 30vh !important;
+    }
+    
 }
 
