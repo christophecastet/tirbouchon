@@ -170,6 +170,11 @@ a{
 .vinsColMargin{
     margin-left: 5rem;
 }
+
+.champColMargin{
+    margin-left:-5rem;
+}
+
 .thumbailLaCave{
     height: 30vh;
     width: 100%;
@@ -402,7 +407,7 @@ a{
 
     .responsiveAbsoCol{
         position: absolute !important;
-        top:104%;
+        top:58.5%;
     }
 
     .responsiveMarginChampagnes{
@@ -435,6 +440,15 @@ a{
         align-items: flex-start !important;
     }
 
-   
+    .responsiveChampagneColMargin{
+        margin-left:2% !important;
+        margin-bottom: 55%;
+        width: 100% !important;
+    }
+
+    #nosChampagnesFlutes{
+        background-position: top;
+        height: 30vh !important;
+    }
 }
 
