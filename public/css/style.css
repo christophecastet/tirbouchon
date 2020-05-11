@@ -157,6 +157,16 @@ a{
     background-size: cover;
     background-attachment: fixed;
 }
+
+/***** SECOND SEPARATOR *****/
+
+.thirdSeparator{
+    background-image: url("/img/thirdSeparator.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 /***** GENERAL ONGLET ****/
 
 .paragSeparator{
@@ -212,6 +222,7 @@ a{
 
 #nosBieresChope{
     background-image: url("/img/nosBieresChope.png");
+    background-position: right;
    
 }
 
@@ -407,7 +418,7 @@ a{
 
     .responsiveAbsoCol{
         position: absolute !important;
-        top:58.5%;
+        top:50%;
     }
 
     .responsiveMarginChampagnes{
@@ -419,7 +430,8 @@ a{
     }
 
     #absoluteBottom{
-        top:95%;
+        top:80%;
+        position: absolute;
     }
     
     #test > .row > .responsiveHeightCave{
@@ -470,6 +482,46 @@ a{
         background-position: top;
         height: 30vh !important;
     }
-    
+
+    .responsiveWidthIcons{
+        width: 15% !important;
+        padding-right: 0 !important;
+    }
+
+    .responsiveWidthTexte{
+        width: 80% !important;
+        padding-left: 0 !important;
+        margin-right: -12% !important;
+    }
+
+    .responsiveAbsoCol > .row >.customHeightResponsive{
+        height: 0% !important;
+    }
+    .responsiveAbsoCol > .row {
+        height: 0% !important;
+    }
+    .row > .responsiveAbsoCol{
+        height: 0% !important;
+    }
 }
 
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    h2 {
+        color:purple;
+    }
+}
+
+/***** CONTACT *****/
+
+.logoContent{
+    height: 15%;
+    width: 25%;
+    background-image: url("/img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#mapid{
+    height: 100%;
+}

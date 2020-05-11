@@ -117,3 +117,31 @@ document.querySelector(".closebtn").addEventListener('click', function() {
   closeNav();
   document.querySelector('#btn').style.display = 'block';
 })
+
+
+/***** LEAFLET *****/
+
+var mymap = L.map('mapid').setView([43.9476,  4.80583], 13);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiYm91bGFuZ2VyaWVicmljZSIsImEiOiJjazhlam44d2sxNndmM2dwZTAwa25ueTRsIn0.2C4Vli5_Jtpy0zPTxyiVLA'
+}).addTo(mymap);
+
+
+var greenIcon = L.icon({
+  iconUrl: '/../img/grappe.png',
+  
+
+  iconSize:     [24, 24], // size of the icon
+  shadowSize:   [50, 64], // size of the shadow
+  iconAnchor:   [12, 24], // point of the icon which will correspond to marker's location
+  shadowAnchor: [4, 62],  // the same for the shadow
+  popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+L.marker([43.945763, 4.805528], {icon: greenIcon}).addTo(mymap);

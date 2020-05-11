@@ -177,8 +177,8 @@
 <div class="container-fluid vh-100 d-flex align-items-center responsiveMarginChampagnes" id="test">
   <div class="row d-flex align-items-center h-100">
     <div class="col-md-8 h-100 responsiveAbsoCol" id="absoluteBottom">
-      <div class="row h-100">
-        <div class='col-md-12 h-100'>
+      <div class="row h-100 customHeightResponsive">
+        <div class='col-md-12 h-100 customHeightResponsive'>
           <div class='container-fluid h-75 w-100 thumbailRubrique' id="nosSpiritueuxElixir"></div>
         </div>
       </div>
@@ -191,6 +191,100 @@
     </div>
   </div>
 </div>
+
+
+<!-- THIRD SEPARATOR -->
+<div class="container-fluid thirdSeparator separatorResponsive vh-100"></div>
+
+
+
+<!-- FORMULAIRE -->
+
+<div class="container-fluid mt-3 vh-100">
+  <div class="row h-100">
+    <div class="col-md-6 h-100 w-100">
+      <div class="container logoContent h-30"></div>
+      <div class='container d-flex justify-content-center align-items-center w-100'>
+        <div class="row d-flex justify-content-center align-items-center w-100">
+          <div class='col-md-6 d-flex justify-content-center align-items-center w-100'>
+            <div class='row d-flex justify-content-center align-items-center w-100'>
+              <div class='col-md-1 responsiveWidthIcons '>
+                <ul class="list-unstyled text-center">
+                  <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+                  <li><br></li>
+                  <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                </ul>
+              </div>
+              <div class='col-md-8 responsiveWidthTexte'>
+                <ul class="list-unstyled ">
+                  <li>3, rue de la Rébublique
+                  <li>84000 Avignon</li>
+                  <li>04 90 88 00 00 </li>
+                  <li>mail@mail.fr</i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-6'>
+            <i class="fa fa-clock-o" aria-hidden="true"></i><span>Nos Horaires</span>
+            <ul>
+              <li>Lun: Fermé</li>
+              <li>Mar: 10h00 - 19h00</li>
+              <li>Mer: 10h00 - 19h00</li>
+              <li>Jeu: 10h00 - 19h00</li>
+              <li>Ven: 10h00 - 19h00</li>
+              <li>Sam: 10h00 - 19h00</li>
+              <li>Dim: 10h00 - 19h00</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='container h-50'>
+         <div id="mapid"></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <form>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Nom" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Nom</span>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Prénom" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Prénom</span>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Mail</span>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Téléphone" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Téléphone</span>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Message</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        <input type="button" class='btn btn-primary' value="Envoyer">
+      </form>
+    </div>
+  
+  
+  </div>
+</div>
+
 <!-- BACK TO TOP -->
 <a id="button"></a>
 {% endblock %}

@@ -18,3 +18,4 @@ require('bootstrap-star-rating');
 // require 2 CSS files needed
 require('bootstrap-star-rating/css/star-rating.css');
 require('bootstrap-star-rating/themes/krajee-svg/theme.css');
+
