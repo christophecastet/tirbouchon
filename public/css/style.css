@@ -177,59 +177,8 @@ a{
     background-size: contain;
 }
 
-.vinsColMargin{
-    margin-left: 5rem;
-}
 
-.champColMargin{
-    margin-left:-5rem;
-}
 
-.thumbailLaCave{
-    height: 30vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-#thumbailVerre{
-    background-image: url("/img/laCaveVerre.png");
-    background-position: left;
-}
-
-#thumbailSommelier{
-    background-image: url("/img/laCaveSommelier.png");
-    background-position: right;
-}
-
-.thumbailRubrique {
-    height: 30vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-#nosVinsVigne{
-    background-image: url("/img/nosVinsVigne.png");
-    background-position: right;
-   
-}
-
-#nosChampagnesFlutes{
-    background-image: url("/img/nosChampagnesFlutes.png");
-   
-}
-
-#nosBieresChope{
-    background-image: url("/img/nosBieresChope.png");
-    background-position: right;
-   
-}
-
-#nosSpiritueuxElixir{
-    background-image: url("/img/nosSpiritueuxElixir.png");
-   
-}
 /***** BACK TO TOP *****/
 #button {
     display: inline-block;
@@ -375,139 +324,94 @@ a{
         display: none;
     }
 
-    #thumbailVerre{
-        background-position: right;
-    }
-    
-    #thumbailSommelier{
-        background-position: left;
-    }
-
-    .responviveCustomSize{
-        display: none;
-    }
-
-    .marginResponsive{
-        margin-top: 30%;
-    }
-
     .sliderResponsive{
         height: 40vh;
+       
     }
+
     .imgSliderSize{
         height: 100% !important;
     }
-
-    #button{
-        bottom:11%;
-        right:1%;
-    }
-
-    .textSlider{
-        font-size:3vh;
-    }
-
-    .main-text{
-        top:3%;
-        right:11%;
-    }
-
-    .repsonsiveRelativeRow{
-        position: relative;
-    }
-
-    .responsiveAbsoCol{
-        position: absolute !important;
-        top:50%;
-    }
-
-    .responsiveMarginChampagnes{
-        margin-top: 3%;
-    }
-
-    .responsiveMarginTopBieres{
-        margin-top: 3%;
-    }
-
-    #absoluteBottom{
-        top:80%;
-        position: absolute;
-    }
     
-    #test > .row > .responsiveHeightCave{
-        height: 50% !important;
-    }
-
-    .marginResponsive > .row >.responsiveVinsColMargin{
-        margin-left:2% !important;
-        width: 100% !important;
-    }
-
-    #nosVinsVigne{
-        background-position: top;
-        height: 30vh !important;
-    }
-    #responsiveMarginimgVin{
-        display: flex !important;
-        align-items: flex-start !important;
-    }
-
-    .responsiveChampagneColMargin{
-        margin-left:2% !important;
-        margin-bottom: 55%;
-        width: 100% !important;
-    }
-
-    #nosChampagnesFlutes{
-        background-position: top;
-        height: 30vh !important;
-    }
-
-    #responsiveMarginimgBieres{
-        display: flex !important;
-        align-items: flex-start !important;
-    }
-
-    #nosBieresChope{
-        background-position: top;
-        height: 30vh !important;
-    }
-
-    .responsiveMarginTopBieres > .row > .responsiveVinsColMargin {
-        margin-left:2% !important;
-        width: 100% !important;
-    }
-
-    #nosSpiritueuxElixir{
-        background-position: top;
-        height: 30vh !important;
-    }
-
-    .responsiveWidthIcons{
-        width: 15% !important;
-        padding-right: 0 !important;
-    }
-
-    .responsiveWidthTexte{
-        width: 80% !important;
-        padding-left: 0 !important;
-        margin-right: -12% !important;
-    }
-
-    .responsiveAbsoCol > .row >.customHeightResponsive{
-        height: 0% !important;
-    }
-    .responsiveAbsoCol > .row {
-        height: 0% !important;
-    }
-    .row > .responsiveAbsoCol{
-        height: 0% !important;
-    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 800px) {
     h2 {
         color:purple;
+    }
+
+    .showMenu{
+        display: block;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+    
+    #navBar{
+        display: none !important;
+    }
+
+    #btn{
+        font-size:30px;
+        cursor:pointer;
+        color:white;
+    }
+
+    .separatorResponsive {
+        display: none;
+    }
+
+    .secondCol{
+        order:1 !important;
+    }
+
+    .firstCol{
+        order:2 !important;
     }
 }
 
