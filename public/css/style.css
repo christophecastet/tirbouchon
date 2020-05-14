@@ -2,7 +2,36 @@
 
 body{
     position: relative;
+
 }
+
+.titleRubrique{
+    font-family: PruistineScript;
+    font-size: 3rem;
+}
+
+.btnColor{
+    background-color: #6a102f !important;
+}
+
+.btnColor:hover{
+    background-color: #480018 !important;
+}
+
+/***** FONT *****/
+
+@font-face {
+    font-family: "PruistineScript";
+    src: url("/fonts/PruistineScript.eot"); /* IE9 Compat Modes */
+    src: url("/fonts/PruistineScript.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("/fonts/PruistineScript.otf") format("opentype"), /* Open Type Font */
+      url("/fonts/PruistineScript.svg") format("svg"), /* Legacy iOS */
+      url("/fonts/PruistineScript.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("/fonts/PruistineScript.woff") format("woff"), /* Modern Browsers */
+      url("/fonts/PruistineScript.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
 
 /***** SLIDER *****/
 .carousselSize > img{
@@ -109,15 +138,19 @@ a{
 }
 
 .colorNavLink{
-    color:pink;
+    color:white;
 }
 
 .navLink:hover{
-    color:	red!important;
+    color:	#6a102f!important;
+    font-weight: bold !important;
+    
 }
 
 .active{
-    color:	blue!important;
+    color:	#6a102f!important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
 }
 
 /***** TEXT SLIDER *****/
@@ -227,6 +260,8 @@ a{
 @media only screen and (max-width: 480px) {
     .showMenu{
         display: block;
+        background-color: rgba(56, 62, 66, 0.5) !important;
+        
     }
     .overlay {
         height: 100%;
@@ -332,7 +367,35 @@ a{
     .imgSliderSize{
         height: 100% !important;
     }
+
+    #blocCoordonnee > .coordonneesResp{
+        text-align: center !important;
+    }
+
+    #blocHoraires > .coordonneesResp{
+        text-align: center !important;
+    }
     
+    .coordonneesRespTitle{
+        text-align: center;
+        display: block;
+    }
+
+    #button{
+        bottom:13%;
+    }
+
+    h2, p, .coordonneesResp , strong{
+        color:white;
+    }
+
+    .textSlider{
+        font-size: 1.5em;
+    }
+
+    .main-text{
+        top:2%;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 800px) {
@@ -342,6 +405,9 @@ a{
 
     .showMenu{
         display: block;
+        background-color: rgba(56, 62, 66, 0.5) !important;
+       
+    
     }
     .overlay {
         height: 100%;
@@ -412,6 +478,26 @@ a{
 
     .firstCol{
         order:2 !important;
+    }
+
+    #blocCoordonnee > .coordonneesResp{
+        text-align: center !important;
+    }
+
+    #blocHoraires > .coordonneesResp{
+        text-align: center !important;
+    }
+    
+    .coordonneesRespTitle{
+        text-align: center;
+        display: block;
+    }
+    h2, p, .coordonneesResp, strong{
+        color:white;
+    }
+
+    .main-text{
+        top:3%;
     }
 }
 

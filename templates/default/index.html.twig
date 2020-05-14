@@ -23,25 +23,27 @@
     </div>
     <div id="navBarFooter">
       <ul class="list-unstyled  d-flex justify-content-around mt-3 ">
-        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">LA CAVE</a></li>
-        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">NOS VINS</a></li>
-        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">NOS CHAMPAGNES</a></li>
-        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">NOS BIERES</a></li>
-        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">NOS SPIRITUEUX</a></li>
-        <li class="list-inline-item "><a href="#test" class="navLink colorNavLink">INFOS / CONTACT</a></li>
+        <li class="list-inline-item "><a href="#cave" class="navLink colorNavLink">LA CAVE</a></li>
+        <li class="list-inline-item "><a href="#vin" class="navLink colorNavLink">NOS VINS</a></li>
+        <li class="list-inline-item "><a href="#champagne" class="navLink colorNavLink">NOS CHAMPAGNES</a></li>
+        <li class="list-inline-item "><a href="#biere" class="navLink colorNavLink">NOS BIERES</a></li>
+        <li class="list-inline-item "><a href="#spiritueu" class="navLink colorNavLink">NOS SPIRITUEUX</a></li>
+        <li class="list-inline-item "><a href="#contact" class="navLink colorNavLink">INFOS / CONTACT</a></li>
       </ul>
     </div>
 </div>
 
 <!-- NAV BAR RESPONSIVE -->
-<div class='container fixed-top showMenu'>
+<div class='container-fluid fixed-top showMenu '>
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <div class="overlay-content">
-      <a class='link' href="#">About</a>
-      <a class='link' href="#">Services</a>
-      <a class='link' href="#">Clients</a>
-      <a class='link' href="#">Contact</a>
+      <a class='link' href="#cave">La Cave</a>
+      <a class='link' href="#vin">Nos Vins</a>
+      <a class='link' href="#champagne">Nos Champagnes</a>
+      <a class='link' href="#biere">Nos Bières</a>
+      <a class='link' href="#spiritueu">Nos Spiritueux</a>
+      <a class='link' href="#contact">Nous Contacter</a>
     </div>
   </div>
   <span  id="btn" >&#9776;</span>
@@ -87,11 +89,11 @@
 <div class="container-fluid firstSeparator separatorResponsive vh-100"></div>
 
 <!-- LA CAVE -->
-<div class="container-fluid" id="test">
+<div class="container-fluid" id="cave">
   <div class="row">
     <div class="col-md-6">
       <div class='container h-100 mt-3 '>
-        <h2>La Cave</h2>
+        <h2 class="titleRubrique">La Cave</h2>
         <div class="paragSeparator"></div>
           <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit</p>
       </div>
@@ -114,12 +116,12 @@
 <div class="container-fluid secondSeparator separatorResponsive vh-100"></div>
 
 <!-- NOS VINS -->
-<div class="container-fluid" id="test">
+<div class="container-fluid" id="vin">
   <div class="row">
     <div class="col-md-6">
       <div class='container h-100 mt-3 '>
-        <h2>Nos Vins</h2>
-        <div class="paragSeparator"></div>
+        <h2 class="titleRubrique">Nos Vins</h2>
+        <div class="paragSeparator mb-2"></div>
           <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit</p>
       </div>
     </div>
@@ -129,41 +131,41 @@
   </div>
   <div class="row d-flex justify-content-center">
      <div class="col-md-2">
-      <input type='button' class='btn btn-primary btn-lg' value='Découvrir'>
+      <input type='button' class='btn btn-primary btnColor btn-lg mb-4' value='Découvrir'>
     </div>
   </div>
 </div>
 
 
 <!-- NOS CHAMPAGNES -->
-<div class='container-fluid'>
+<div class='container-fluid mt-4' id='champagne'>
   <div class='row'>
     <div class='col-lg-6 text-center firstCol'>
       <img src='/img/nosChampagnesFlutes.png' class='img-fluid mt-3 mb-3'>
     </div>
     <div class="col-lg-6 order-first order-sm-1 secondCol">
       <div class='container h-100 mt-3 '>
-        <h2>Nos Vins</h2>
-        <div class="paragSeparator"></div>
+        <h2 class="titleRubrique">Nos Champagnes</h2>
+        <div class="paragSeparator mb-2"></div>
           <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit</p>
       </div>
     </div>
   </div>
   <div class="row d-flex justify-content-center">
      <div class="col-lg-2">
-      <input type='button' class='btn btn-primary btn-lg' value='Découvrir'>
+      <input type='button' class='btn btn-primary btnColor btn-lg mb-4' value='Découvrir'>
     </div>
   </div>
 </div>
 
 
 <!-- NOS BIERES -->
-<div class="container-fluid" id="test">
+<div class="container-fluid mt-4" id="biere">
   <div class="row">
     <div class="col-md-6">
       <div class='container h-100 mt-3 '>
-        <h2>Nos Bières</h2>
-        <div class="paragSeparator"></div>
+        <h2 class="titleRubrique">Nos Bières</h2>
+        <div class="paragSeparator mb-2"></div>
           <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit</p>
       </div>
     </div>
@@ -173,36 +175,36 @@
   </div>
   <div class="row d-flex justify-content-center">
      <div class="col-md-2">
-      <input type='button' class='btn btn-primary btn-lg' value='Découvrir'>
+      <input type='button' class='btn btn-primary btnColor btn-lg mb-4' value='Découvrir'>
     </div>
   </div>
 </div>
 
 
 <!-- NOS SPIRITUEUX -->
-<div class='container-fluid'>
+<div class='container-fluid mt-4' id="spiritueu">
   <div class='row'>
     <div class='col-lg-6 text-center firstCol'>
       <img src='/img/nosSpiritueuxElixir.png' class='img-fluid mt-3 mb-3'>
     </div>
     <div class="col-lg-6 order-first order-sm-1 secondCol">
       <div class='container h-100 mt-3 '>
-        <h2>Nos Spiritueux</h2>
-        <div class="paragSeparator"></div>
+        <h2 class="titleRubrique">Nos Spiritueux</h2>
+        <div class="paragSeparator mb-2"></div>
           <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit</p>
       </div>
     </div>
   </div>
   <div class="row d-flex justify-content-center">
      <div class="col-lg-2">
-      <input type='button' class='btn btn-primary btn-lg' value='Découvrir'>
+      <input type='button' class='btn btn-primary btnColor btn-lg mb-4' value='Découvrir'>
     </div>
   </div>
 </div>
 
 
 <!-- INFO CONTACT -->
-<div class="container-fluid">
+<div class="container-fluid mt-4" id='contact'>
   <div class='row'>
     <div class="col-md-5">
       <div class='container-fluid text-center '>
@@ -211,24 +213,24 @@
     </div>
   </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid mt-5">
   <div class='row'>
     <div class="col-md-7">
       <div class="row">
-        <div class='col-md-5 text-center ml-3'>
-          <ul class="list-unstyled text-left">
+        <div class='col-md-5 text-center ml-3 ' id='blocCoordonnee'>
+          <ul class="list-unstyled text-left coordonneesResp">
             <li><i class="fa fa-map mr-2" aria-hidden="true"></i>3, rue de la République</li>
             <li><i class="mr-4"></i>84000 Avignon</li>
           </ul>
-          <ul class='list-unstyled text-left'>
+          <ul class='list-unstyled text-left coordonneesResp'>
             <li><i class="fa fa-mobile mr-3" aria-hidden="true"></i>04 90 90 90 90</li>
             <li><i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>test@mail.fr</li>
           </ul>
 
         </div>
-        <div class='col-md-5 text-left'>
-          <strong><i class="fa fa-clock-o mr-2" aria-hidden="true"></i>Nos Horaires</strong>
-          <ul class='list-unstyled '>
+        <div class='col-md-5 text-left' id='blocHoraires'>
+          <strong class=' coordonneesRespTitle' ><i class="fa fa-clock-o mr-2" aria-hidden="true"></i>Nos Horaires</strong>
+          <ul class='list-unstyled coordonneesResp'>
             <li>Lun: Fermé</li>
             <li>Mar: 10h00 – 19h00</li>
             <li>Mer: 10h00 – 19h00</li>
@@ -242,7 +244,8 @@
       </div>
     </div>
     <div class="col-md-5">
-      <h2>Nous Contacter</h2>
+      <h2 class="titleRubrique">Nous Contacter</h2>
+       <div class="paragSeparator mb-2"></div>
       <form>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -274,13 +277,13 @@
           </div>
           <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
-        <input type="button" class='btn btn-primary' value='Envoyer'>
+        <input type="button" class='btn btn-primary btnColor mt-4' value='Envoyer'>
       </form>
     </div>
   </div>
 </div>
 
-<div class='container-fluid text-center'>
+<div class='container-fluid text-center mt-5'>
   <strong>&copy Castet Christophe 2020</strong>
 </div>
 <!-- BACK TO TOP -->

@@ -118,6 +118,36 @@ document.querySelector(".closebtn").addEventListener('click', function() {
   document.querySelector('#btn').style.display = 'block';
 })
 
+/***** BODY COLOR *****/
+
+
+
+window.addEventListener('resize', function () {
+
+  let size = $(window).width();
+  let content = $('.container-fluid');
+  
+  
+    for (let i =0; i < content.length; i++) {
+      if (size > 320 && size <= 375) {
+        content[i].style.backgroundColor='#293133';
+        document.body.style.backgroundColor='#293133';
+      } 
+      else if (size > 375 && size <= 800) {
+        content[i].style.backgroundColor='#5a3a22';
+        document.body.style.backgroundColor='#5a3a22';
+      }
+      else if (size > 800) {
+        content[i].style.backgroundColor='white';
+        document.body.style.backgroundColor='white';
+      }
+    }
+
+});
+
+
+
+
 
 /***** LEAFLET *****/
 
@@ -145,3 +175,5 @@ var greenIcon = L.icon({
 });
 
 L.marker([43.945763, 4.805528], {icon: greenIcon}).addTo(mymap);
+
+
