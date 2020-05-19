@@ -146,6 +146,23 @@ window.addEventListener('resize', function () {
 });
 
 
+/***** IMAGE COLOR  *****/
+
+let bodyCSS = window.getComputedStyle( document.querySelector( 'body' ), null );
+let bgColor = bodyCSS.getPropertyValue( 'background-color' );
+console.log(bgColor);
+let testif = $('#testif');
+
+
+if (bgColor === 'rgb(255, 255, 255)') {
+  testif[0].style.color = 'blue';
+} else{
+  testif[0].style.color = 'red';
+}
+
+
+let logoColor = $('.logoColor');
+logoColor[0].setAttribute('src', '/img/logoSmBk.png');
 
 
 

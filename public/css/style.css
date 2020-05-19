@@ -513,5 +513,9 @@ a{
 }
 
 #mapid{
-    height: 100%;
+    height: 40vh;
+}
+
+body{
+    background-color: white;
 }
