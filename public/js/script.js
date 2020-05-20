@@ -194,3 +194,27 @@ var greenIcon = L.icon({
 L.marker([43.945763, 4.805528], {icon: greenIcon}).addTo(mymap);
 
 
+
+
+
+
+
+
+/***** DISPLAY IMG AU SCROLL *****/
+
+window.addEventListener('scroll', function(e) {
+  const offset= 400;
+  
+  let positions = $('.position');
+  let divImg =$('.cache');
+  let scrollEvt = Math.round(document.documentElement.scrollTop);
+
+  for(let i = 0; i < positions.length; i++) {
+    let position = positions[i].offsetTop;
+    if( scrollEvt > 0 + (position-offset)) {
+      for(let y = 0; y < divImg.length; y++) {
+        divImg[i].classList.add('affiche');
+      }
+    }
+  }
+})
