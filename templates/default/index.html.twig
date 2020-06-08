@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DefaultController!{% endblock %}
+{% block title %}Au Chti Canon{% endblock %}
 
 {% block body %}
 
@@ -16,19 +16,19 @@
         </div>
         <div id="navBarHeaderMiddle"></div>
         <div id="navBarHeaderRight">
-            <div class="navBarPicto phone"></div>
-            <div class="navBarPicto fbk"></div>
-            <div class="navBarPicto insta"></div>
+            <a href="tel:+33626144395" class='sizeLinkNavBarPicto'><div class="navBarPicto phone"></div></a>
+            <a href="https://fr-fr.facebook.com/" class='sizeLinkNavBarPicto'><div class="navBarPicto fbk"></div></a>
+            <a href="https://www.instagram.com/" class='sizeLinkNavBarPicto'><div class="navBarPicto insta"></div></a>
         </div>
     </div>
     <div id="navBarFooter">
       <ul class="list-unstyled  d-flex justify-content-around mt-3 ">
-        <li class="list-inline-item "><a href="#cave" class="navLink colorNavLink">LA CAVE</a></li>
-        <li class="list-inline-item "><a href="#vin" class="navLink colorNavLink">NOS VINS</a></li>
-        <li class="list-inline-item "><a href="#champagne" class="navLink colorNavLink">NOS CHAMPAGNES</a></li>
-        <li class="list-inline-item "><a href="#biere" class="navLink colorNavLink">NOS BIERES</a></li>
-        <li class="list-inline-item "><a href="#spiritueu" class="navLink colorNavLink">NOS SPIRITUEUX</a></li>
-        <li class="list-inline-item "><a href="#contact" class="navLink colorNavLink">INFOS / CONTACT</a></li>
+        <li class="list-inline-item"><a href="#cave" class="navLink colorNavLink js-scrollTo">LA CAVE</a></li>
+        <li class="list-inline-item"><a href="#vin" class="navLink colorNavLink js-scrollTo ">NOS VINS</a></li>
+        <li class="list-inline-item"><a href="#champagne" class="navLink colorNavLink js-scrollTo ">NOS CHAMPAGNES</a></li>
+        <li class="list-inline-item "><a href="#biere" class="navLink colorNavLink js-scrollTo ">NOS BIERES</a></li>
+        <li class="list-inline-item "><a href="#spiritueu" class="navLink colorNavLink js-scrollTo ">NOS SPIRITUEUX</a></li>
+        <li class="list-inline-item "><a href="#contact" class="navLink colorNavLink js-scrollTo ">INFOS / CONTACT</a></li>
       </ul>
     </div>
 </div>
@@ -38,21 +38,21 @@
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <div class="overlay-content">
-      <a class='link' href="#cave">La Cave</a>
-      <a class='link' href="#vin">Nos Vins</a>
-      <a class='link' href="#champagne">Nos Champagnes</a>
-      <a class='link' href="#biere">Nos Bières</a>
-      <a class='link' href="#spiritueu">Nos Spiritueux</a>
-      <a class='link' href="#contact">Nous Contacter</a>
+      <a class='link js-scrollTo ' href="#cave">La Cave</a>
+      <a class='link js-scrollTo ' href="#vin">Nos Vins</a>
+      <a class='link js-scrollTo ' href="#champagne">Nos Champagnes</a>
+      <a class='link js-scrollTo ' href="#biere">Nos Bières</a>
+      <a class='link js-scrollTo ' href="#spiritueu">Nos Spiritueux</a>
+      <a class='link js-scrollTo ' href="#contact">Nous Contacter</a>
     </div>
   </div>
   <span  id="btn" >&#9776;</span>
 </div>
 
 <div class="container-fluid fixed-bottom footerReponsive d-flex align-items-center justify-content-around">
-    <div class="footerPicto phone"></div>
-    <div class="footerPicto fbk"></div>
-    <div class="footerPicto insta"></div>
+    <a href="tel:33626144395"  class="sizeLinkFooterPicto"><div class="footerPicto phone"></div></a>
+    <a href="https://fr-fr.facebook.com/" target="blank" class="sizeLinkFooterPicto"><div class="footerPicto fbk"></div></a>
+    <a href="https://www.instagram.com/" target="blank" class="sizeLinkFooterPicto"><div class="footerPicto insta"></div></a>
 </div>
 <!-- SLIDER -->
 <div id="carouselExampleControls" class="carousel slide sliderPosition vw-100 sliderResponsive " data-ride="carousel">
@@ -254,33 +254,33 @@
       <form>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">@</span>
+            <span class="input-group-text" id="basic-addon1">Nom</span>
           </div>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="Nom" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">@</span>
+            <span class="input-group-text" id="basic-addon1">Prénom</span>
           </div>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="Prénom" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">@</span>
+            <span class="input-group-text" id="basic-addon1">Mail</span>
           </div>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="email" class="form-control" placeholder="Mail" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">@</span>
+            <span class="input-group-text" id="basic-addon1">Objet</span>
           </div>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="Objet" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <div class="input-group">
           <div class="input-group-prepend">
-            <span class="input-group-text">With textarea</span>
+            <span class="input-group-text">Message</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
+          <textarea class="form-control" aria-label="With textarea" placeholder='message'></textarea>
         </div>
         <input type="button" class='btn btn-primary btnColor mt-4' value='Envoyer'>
       </form>

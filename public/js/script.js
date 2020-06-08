@@ -153,13 +153,13 @@ let bgColor = bodyCSS.getPropertyValue( 'background-color' );
 console.log(bgColor);
 let testif = $('#testif');
 
-
+/*
 if (bgColor === 'rgb(255, 255, 255)') {
   testif[0].style.color = 'blue';
 } else{
   testif[0].style.color = 'red';
 }
-
+*/
 
 let logoColor = $('.logoColor');
 logoColor[0].setAttribute('src', '/img/logoSmBk.png');
@@ -218,3 +218,15 @@ window.addEventListener('scroll', function(e) {
     }
   }
 })
+
+/****** LINK SCROLLING *****/
+
+$(document).ready(function() {
+  $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+    var page = $(this).attr('href'); // Page cible
+    var speed = 750; // Durée de l'animation (en ms)
+    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+    return false;
+  });
+});
+

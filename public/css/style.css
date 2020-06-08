@@ -93,10 +93,16 @@ body{
 }
 
 
-.navBarPicto{
+.sizeLinkNavBarPicto{
     height: 50%;
     width: 15%;
 }
+
+.navBarPicto {
+    height: 100%;
+    width: 100%;
+}
+
 
 .phone{
     background-image: url("/img/phone.png");
@@ -329,9 +335,16 @@ a{
     }
    
     .footerPicto{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+       
+    }
+
+    .sizeLinkFooterPicto{
         height: 75%;
         width: 33%;
-        background-position: center;
+        
     }
     .phone{
         background-image: url("/img/phone.png");
@@ -400,7 +413,7 @@ a{
 
 @media only screen and (min-width: 481px) and (max-width: 800px) {
     h2 {
-        color:purple;
+        color:white;
     }
 
     .showMenu{
