@@ -1,3 +1,7 @@
+let titre = $(document).find("title").text();
+console.log(titre);
+
+
 /***** DEPLACEMENT NAV BAR *****/
 
 $(window).scroll(function () {
@@ -43,46 +47,7 @@ btn.on('click', function(e) {
 });
 
 
-/***** TYPE WRITER *****/
 
-// set up text to print, each item in array is new line
-var aText = new Array(
-    "Le vin c'est de la poésie ", 
-    "en bouteille.."
-    );
-    var iSpeed = 100; // time delay of print out
-    var iIndex = 0; // start printing array at this posision
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
-     
-    var iTextPos = 0; // initialise text position
-    var sContents = ''; // initialise contents variable
-    var iRow; // initialise current row
-     
-    function typewriter()
-    {
-     sContents =  ' ';
-     iRow = Math.max(0, iIndex-iScrollAt);
-     var destination = document.getElementById("typedtext");
-     
-     while ( iRow < iIndex ) {
-      sContents += aText[iRow++] + '<br />';
-     }
-     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + ".";
-     if ( iTextPos++ == iArrLength ) {
-      iTextPos = 0;
-      iIndex++;
-      if ( iIndex != aText.length ) {
-       iArrLength = aText[iIndex].length;
-       setTimeout("typewriter()", 500);
-      }
-     } else {
-      setTimeout("typewriter()", iSpeed);
-     }
-    }
-    
-    
-    typewriter();
 
 /***** BURGER MENU *****/
 
@@ -120,30 +85,32 @@ document.querySelector(".closebtn").addEventListener('click', function() {
 
 /***** BODY COLOR *****/
 
+if (titre === 'Au Chti Canon') {
+  window.addEventListener('resize', function () {
 
-
-window.addEventListener('resize', function () {
-
-  let size = $(window).width();
-  let content = $('.container-fluid');
-  
-  
-    for (let i =0; i < content.length; i++) {
-      if (size > 320 && size <= 375) {
-        content[i].style.backgroundColor='#293133';
-        document.body.style.backgroundColor='#293133';
-      } 
-      else if (size > 375 && size <= 800) {
-        content[i].style.backgroundColor='#5a3a22';
-        document.body.style.backgroundColor='#5a3a22';
+    let size = $(window).width();
+    let content = $('.container-fluid');
+    
+    
+      for (let i =0; i < content.length; i++) {
+        if (size > 320 && size <= 375) {
+          content[i].style.backgroundColor='#293133';
+          document.body.style.backgroundColor='#293133';
+        } 
+        else if (size > 375 && size <= 800) {
+          content[i].style.backgroundColor='#5a3a22';
+          document.body.style.backgroundColor='#5a3a22';
+        }
+        else if (size > 800) {
+          content[i].style.backgroundColor='white';
+          document.body.style.backgroundColor='white';
+        }
       }
-      else if (size > 800) {
-        content[i].style.backgroundColor='white';
-        document.body.style.backgroundColor='white';
-      }
-    }
+  
+  });
+}
 
-});
+
 
 
 /***** IMAGE COLOR  *****/
@@ -230,3 +197,43 @@ $(document).ready(function() {
   });
 });
 
+/***** TYPE WRITER *****/
+
+// set up text to print, each item in array is new line
+var aText = new Array(
+  "Le vin c'est de la poésie ", 
+  "en bouteille.."
+  );
+  var iSpeed = 100; // time delay of print out
+  var iIndex = 0; // start printing array at this posision
+  var iArrLength = aText[0].length; // the length of the text array
+  var iScrollAt = 20; // start scrolling up at this many lines
+   
+  var iTextPos = 0; // initialise text position
+  var sContents = ''; // initialise contents variable
+  var iRow; // initialise current row
+   
+  function typewriter()
+  {
+   sContents =  ' ';
+   iRow = Math.max(0, iIndex-iScrollAt);
+   var destination = document.getElementById("typedtext");
+   
+   while ( iRow < iIndex ) {
+    sContents += aText[iRow++] + '<br />';
+   }
+   destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + ".";
+   if ( iTextPos++ == iArrLength ) {
+    iTextPos = 0;
+    iIndex++;
+    if ( iIndex != aText.length ) {
+     iArrLength = aText[iIndex].length;
+     setTimeout("typewriter()", 500);
+    }
+   } else {
+    setTimeout("typewriter()", iSpeed);
+   }
+  }
+  
+  
+  typewriter();

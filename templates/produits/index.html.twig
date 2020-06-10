@@ -3,19 +3,80 @@
 {% block title %}Nos Produits{% endblock %}
 
 {% block body %}
-<nav class="navBarProduit">
+
+<!-- NAV BAR -->
+
+<nav class="navBarProduit" id='navBarProduit'>
     <div class='leftContent'></div>
-    <div class='righttContent'>
+    <div class='rightContent'>
         <ul  class="list-unstyled">
-            <li>Accueil</li>
-            <li>Nos Vins</li>
-            <li>Nos Champagnes</li>
-            <li>Nos Bières</li>
-            <li>Nos Spiritueux</li>
-            <li><i class="fa fa-shopping-basket" aria-hidden="true"></i></li>
+            <li class="list-inline-item"><a href="" class="navLink colorNavLink">Accueil</a></li>
+            <li class="list-inline-item"><a href="" class="navLink colorNavLink">Nos Vins</a></li>
+            <li class="list-inline-item"><a href="" class="navLink colorNavLink">Nos Champagnes</a></li>
+            <li class="list-inline-item"><a href="" class="navLink colorNavLink">Nos Bières</a></li>
+            <li class="list-inline-item"><a href="" class="navLink colorNavLink">Nos Spiritueux</a></li>
+            <li class="list-inline-item"><a href="" class="navLink colorNavLink"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
         </ul>
     </div>
     
 </nav>
-<h1>Je suis un produit</h1>
+
+<!-- NAV BAR RESPONSIVE -->
+
+<div class='container-fluid fixed-top showMenu '>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <div class="overlay-content">
+      <a class='link js-scrollTo ' href="#cave">Accueim</a>
+      <a class='link js-scrollTo ' href="#vin">Nos Vins</a>
+      <a class='link js-scrollTo ' href="#champagne">Nos Champagnes</a>
+      <a class='link js-scrollTo ' href="#biere">Nos Bières</a>
+      <a class='link js-scrollTo ' href="#spiritueu">Nos Spiritueux</a>
+      <a class='link js-scrollTo ' href="#contact"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <span  id="btn" >&#9776;</span>
+</div>
+
+<!-- SIDE BAR MENU -->
+
+<div class='main'>
+    <div class='sideBar'></div>
+    <div class='content'>
+        <div class='cardsContainer'>
+            <div class='cardContent'>
+                <div class='cardPicture'></div>
+                <div class='cartText'></div>
+                <div class='cardAdd'></div>
+            </div>
+            <div class='cardContent'>
+                <div class='cardPicture'></div>
+                <div class='cartText'></div>
+                <div class='cardAdd'></div>
+            </div>
+            <div class='cardContent'>
+                <div class='cardPicture'></div>
+                <div class='cartText'></div>
+                <div class='cardAdd'></div>
+            </div>
+        </div>
+           <div class='cardsContainer'>
+            <div class='cardContent'>
+                <div class='cardPicture'></div>
+                <div class='cartText'></div>
+                <div class='cardAdd'></div>
+            </div>
+            <div class='cardContent'>
+                <div class='cardPicture'></div>
+                <div class='cartText'></div>
+                <div class='cardAdd'></div>
+            </div>
+            <div class='cardContent'>
+                <div class='cardPicture'></div>
+                <div class='cartText'></div>
+                <div class='cardAdd'></div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
